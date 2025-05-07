@@ -1,0 +1,76 @@
+/* styles.css */
+:root {
+    --primary-color: #2d3436;
+    --secondary-color: #636e72;
+    --accent-color: #0984e3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contact {
+    background-color: #f5f6fa;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 5px;
+}
+
+/* Font styling */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+
+/* Icons styling */
+.devicon, .mdi {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    
+    .profile-img {
+        width: 100%;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
